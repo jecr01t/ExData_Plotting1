@@ -15,7 +15,7 @@ loadData <- function() {
 				"select * from dataFile where Date = '1/2/2007' or Date = '2/2/2007'",
 			)
 
-			#powerConsumption$DateTime <- strptime(powerConsumption$DateTime, "%Y-%m-%d %H:%M:%S")
+			#powerConsumption$DateTime = strptime(powerConsumption$DateTime, "%Y-%m-%d %H:%M:%S")
 			powerConsumption$DateTime = as.POSIXlt(
 				strptime(
 					paste(as.Date(powerConsumption$Date, "%d/%m/%Y"),
