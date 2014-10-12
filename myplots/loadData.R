@@ -15,7 +15,7 @@ loadData <- function() {
 				"select * from dataFile where Date = '1/2/2007' or Date = '2/2/2007'",
 			)
 
-			#tbl$DateTime <- strptime(tbl$DateTime, "%Y-%m-%d %H:%M:%S")
+			#powerConsumption$DateTime <- strptime(powerConsumption$DateTime, "%Y-%m-%d %H:%M:%S")
 			powerConsumption$DateTime = as.POSIXlt(
 				strptime(
 					paste(as.Date(powerConsumption$Date, "%d/%m/%Y"),
@@ -26,10 +26,6 @@ loadData <- function() {
 
 			powerConsumption = 
 				powerConsumption[,-which(names(powerConsumption) %in% c("Date","Time"))]
-
-		#tbl <- tbl[(tbl$Date == "1/2/2007") | (tbl$Date == "2/2/2007"),]
-		#tbl$DateTime <- strptime(paste(tbl$Date, tbl$Time), "%d/%m/%Y %H:%M:%S")
-		#write.csv(tbl, cacheFile)
 		}
 	}
 	powerConsumption
