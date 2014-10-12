@@ -12,3 +12,7 @@ For loadData.R to work correctly, two conditions have to be met:
 - The library "sqldf" *must* be installed on the system, and,
 - The data file ("household_power_consumption.txt") *must exits* in the *same* directory
 
+The source data, as indicated by the text in the description of the assignment
+can be obtained from the following url:
+
+[Source: ](https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip)
