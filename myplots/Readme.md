@@ -1,6 +1,7 @@
 #Instructions
 
-This directory contains all the files a indicated in the assignment.
+This directory contains all the files a indicated in the assignment (images as
+png files and scripts as R files).
 
 There's one additional script: "loadData.R". Its sole purpose is to initialize 
 the data frame the plotting scripts use for processing.
@@ -13,6 +14,6 @@ For loadData.R to work correctly, two conditions have to be met:
 - The data file ("household_power_consumption.txt") *must exits* in the *same* directory
 
 The source data, as indicated by the text in the description of the assignment
-can be obtained from the following url:
+can be obtained from the following link:
 
 [Source: ](https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip)
