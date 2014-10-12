@@ -10,7 +10,7 @@ loadData <- function() {
 
 		if(file.exists(dataFileName)) {
 			dataFile <- file(dataFileName)
-			attr(dataFile, "file.format") = list(sep=';', header=TRUE), na.strings="?"
+			attr(dataFile, "file.format") = list(sep=';', header=TRUE, na.strings="?")
 			powerConsumption = sqldf(
 				"select * from dataFile where Date = '1/2/2007' or Date = '2/2/2007'",
 			)
